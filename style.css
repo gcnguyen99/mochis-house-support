@@ -13,3 +13,15 @@ a { color: var(--accent); text-underline-offset: 4px; }
 nav { margin-bottom: 20px; font-weight: 700; }
 nav a { margin-right: 16px; }
 .small { color: var(--soft); font-size: 0.9rem; }
+.hero { display: flex; gap: 18px; align-items: center; margin-bottom: 20px; }
+.hero img { width: 96px; height: 96px; border-radius: 22px; border: 3px solid var(--text); }
+.hero h1 { margin: 0; }
+.hero p { margin: 4px 0 0; color: var(--soft); font-weight: 600; }
+.wide { max-width: 980px; }
+.poses { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.poses li { padding-left: 0; }
+.poses b { display: inline-block; min-width: 0; }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 20px 0 4px; }
+.gallery img { width: 100%; height: auto; border-radius: 16px; border: 3px solid var(--text); display: block; }
+.stack > * + * { margin-top: 20px; }
+@media (max-width: 480px) { .gallery { grid-template-columns: repeat(2, 1fr); } .hero img { width: 72px; height: 72px; } }
